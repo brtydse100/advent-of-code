@@ -1,0 +1,5 @@
+  # person1.append(pair[0][0])
+        # person1.append(pair[0][2])
+        # person2.append(pair[1][0])
+        # person2.append(pair[1][2])
+        # print(person1)
