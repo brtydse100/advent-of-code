@@ -20,17 +20,16 @@ def is_overlap(person1, person2):
 person1 = []
 person2 = []
 sum = 0
-with open('text.txt') as f:
+with open('day4_input.txt') as f:
     lines = f.readlines()
     for i in lines:
         pair = re.split(r",|-|\n", i)
         person1.clear()
         person2.clear()
         
-        person1.append(pair[0])
-        person1.append(pair[1]) 
-        person2.append(pair[2])
-        person2.append(pair[3])
+        for j in range(2):  
+            person1.append(pair[j])
+            person2.append(pair[j+2])
         # print(person1,person2)
         if(is_overlap(person1, person2) is True):
           sum += 1
